@@ -12,4 +12,6 @@ bubble sort - https://iyk2h.tistory.com/128
 
 SelectionSort - https://iyk2h.tistory.com/129
 
+InsertionSort - https://iyk2h.tistory.com/130
+
 
