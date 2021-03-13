@@ -10,6 +10,9 @@ typedef struct *node
     struct *node Queue;
 }node;
 
-node *insert(int value)
+node *insert(node *Nnode, int value)
 {
-	
+	if(Nnode == NULL)
+		return Nnode;
+	i
+}
