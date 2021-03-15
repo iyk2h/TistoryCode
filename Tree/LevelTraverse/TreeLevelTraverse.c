@@ -1,18 +1,40 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-typedef struct *node
+typedef struct node
 {
     int data;
-    struct *node left;
-    struct *node right;
-	struct *node date;
+    struct node* left;
+    struct node* right;
 
-    struct *node Queue;
+    struct node* Queue;
 }node;
 
-node *insert(node *Nnode, int value)
+node* Node;
+
+node* insert(node* Nnode, int value)
 {
 	if(Nnode == NULL)
+	{
+		Nnode = (node*)malloc(sizeof(node));
+		Nnode->data=value;
+		Nnode->left = Nnode->right = NULL;
 		return Nnode;
-	i
+	}
+	else
+	{
+		if(value < Nnode->data)
+			Nnode->left = insert(Nnode->left, value);
+		else
+			Nnode->right = insert(Nnode->right, value);
+	}
+	return Nnode;
+}
+
+int main()
+{
+	Node = insert(Node, 5);
+	printf("%d",Node->data);
+	Node = insert(Node, 4);
+	printf("%d",Node->left->data);
 }
