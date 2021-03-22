@@ -31,6 +31,12 @@ node* insert(node* Nnode, int value)
 	return Nnode;
 }
 
+node* delete(node* Dnode, int value)
+{
+	if(Dnode == NULL)
+		return Dnode;
+}
+
 int main()
 {
 	Node = insert(Node, 5);
