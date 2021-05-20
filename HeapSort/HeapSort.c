@@ -52,15 +52,6 @@ void heapSort(int n)
 		node[0] = tmp;
 		n--;
 	}
-	/*
-	for(int i = n-1; i>=0 ; i--)
-	{
-		maxHeap(i);
-		tmp = node[i];
-		node[i] = node[0];
-		node[0] = tmp;
-	}
-	*/
 }
 void print(int *node)
 {
