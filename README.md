@@ -25,3 +25,5 @@ ChangeTextColor - https://iyk2h.tistory.com/134
 BinaryTree - https://iyk2h.tistory.com/135
 
 Queue - https://iyk2h.tistory.com/137 
+
+HeapSort - https://iyk2h.tistory.com/142
